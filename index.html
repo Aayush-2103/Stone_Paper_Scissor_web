@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone_Paper_Scissors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div id="game" class="">
+        <div id="heading" class="text-center pt-10 pb-5 font-bold font-serif text-4xl bg-blue-900 text-blue-50">
+            Rock Paper Scissors
+        </div>
+        <div id="choices" class="flex gap-20 p-20 justify-center">
+            <img src="./images/rock.png" id="choice" name="rock" alt="" class="h-[200px] w-[200px] hover:scale-110 object-cover border-4 border-black rounded-full">
+            <img src="./images/paper.png" id="choice" name="paper" alt="" class="h-[200px] w-[200px] hover:scale-110 object-cover border-4 border-black rounded-full">
+            <img src="./images/scissors.png" id="choice" name="scissors" alt="" class="h-[200px] w-[200px] hover:scale-110 object-cover border-4 border-black rounded-full">
+        </div>
+        
+        <!--Plan is to put your move and computer's move-->
+        <div class="flex">
+            <div class="w-1/3 ml-36 text-4xl font-serif ">
+                <div class="text-right mb-3">
+                    You :-            
+                </div>
+                <div class="text-right">
+                    Computer :- 
+                </div>
+            </div>
+            <div class="text-4xl ml-5 font-serif w-fit ">
+                <div id="yourChoice" class="mb-3"></div>
+                <div id="compChoice"></div>
+            </div>
+        </div>
+
+        <div id="score_card" class="flex font-serif gap-36 mt-14 justify-center">
+            <div id="display_user" class="flex-col">
+                <div id="user_score" class="text-center mb-4 text-7xl">
+                    0
+                </div>
+                <div id="user_name" class="text-center text-5xl overline">
+                    You
+                </div>
+            </div>
+            <div id="display_computer" class="flex-col">
+                <div id="computer_score" class="text-center mb-4 text-7xl">
+                    0
+                </div>
+                <div id="computer" class="text-center text-5xl overline">
+                    Computer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
