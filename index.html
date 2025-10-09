@@ -7,53 +7,41 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
-    <div id="game" class="">
-        <div id="heading" class="text-center pt-10 pb-5 font-bold font-serif text-4xl bg-blue-900 text-blue-50">
-            Rock Paper Scissors
-        </div>
-        <div id="choices" class="flex gap-20 p-20 justify-center">
-            <img src="./images/rock.png" id="choice" name="rock" alt="" class="h-[200px] w-[200px] hover:scale-110 object-cover border-4 border-black rounded-full">
-            <img src="./images/paper.png" id="choice" name="paper" alt="" class="h-[200px] w-[200px] hover:scale-110 object-cover border-4 border-black rounded-full">
-            <img src="./images/scissors.png" id="choice" name="scissors" alt="" class="h-[200px] w-[200px] hover:scale-110 object-cover border-4 border-black rounded-full">
-        </div>
-        
-        <!--Plan is to put your move and computer's move-->
-        <div class="flex">
-            <div class="w-1/3 ml-36 text-4xl font-serif ">
-                <div class="text-right mb-3">
-                    You :-            
-                </div>
-                <div class="text-right">
-                    Computer :- 
-                </div>
-            </div>
-            <div class="text-4xl ml-5 font-serif w-fit ">
-                <div id="yourChoice" class="mb-3"></div>
-                <div id="compChoice"></div>
-            </div>
-        </div>
 
-        <div id="score_card" class="flex font-serif gap-36 mt-14 justify-center">
-            <div id="display_user" class="flex-col">
-                <div id="user_score" class="text-center mb-4 text-7xl">
-                    0
+    <div class="w-screen h-screen">
+        <div class="w-screen h-[10vh] bg-blue-900 flex justify-center items-center pt-5">
+            <p class="text-center text-4xl text-blue-50 font-serif font-extrabold">Stone Paper Scissor</p>
+        </div>
+        <div class="w-screen pt-16 flex flex-wrap gap-10 justify-center">
+            <img src="./images/rock.png" alt="" name="rock" id="choice" class="rounded-full h-[140px] w-[140px] object-cover border-4 hover:scale-110 border-black ">
+            <img src="./images/paper.png" alt="" name="paper" id="choice" class="rounded-full h-[140px] w-[140px] object-cover border-4 hover:scale-110 border-black ">                    
+            <img src="./images/scissors.png" alt="" name="scissors" id="choice" class="rounded-full h-[140px] w-[140px] object-cover border-4 hover:scale-110 border-black ">
+        </div>
+        <div class="w-screen h-fit py-8 pt-20 font-serif text-3xl">
+            <div class="flex py-3">
+                <div class="w-1/2 text-right pr-3">
+                    You :- 
                 </div>
-                <div id="user_name" class="text-center text-5xl overline">
-                    You
-                </div>
+                <div id="user_choice" class="w-fit"></div>
             </div>
-            <div id="display_computer" class="flex-col">
-                <div id="computer_score" class="text-center mb-4 text-7xl">
-                    0
+            <div class="flex">
+                <div class="w-1/2 text-right pr-3">
+                    Computer :-
                 </div>
-                <div id="computer" class="text-center text-5xl overline">
-                    Computer
-                </div>
+                <div id="comp_choice" class="w-fit"></div>
             </div>
         </div>
-    </div>
-
+        <div class="w-screen h-fit pt-10 flex justify-center gap-16 font-serif text-4xl">
+            <div class="w-fit h-fit text-center">
+                <div id="user_score" class="pb-5 text-5xl font-extrabold">0</div>
+                <div class="overline">You</div>
+            </div>
+            <div class="w-fit h-fit text-center">
+                <div id="comp_score" class="pb-5 text-5xl font-extrabold">0</div>
+                <div class="overline">Computer</div>
+            </div>
+        </div>
+    </div>    
     <script src="script.js"></script>
 </body>
 </html>

@@ -2,9 +2,9 @@ let choices = document.querySelectorAll('#choice');
 let userScore = 0;
 let compScore = 0;
 let user_score = document.querySelector('#user_score');
-let comp_score = document.querySelector('#computer_score');
-let your_choice = document.querySelector('#yourChoice');
-let comp_choice = document.querySelector('#compChoice');
+let comp_score = document.querySelector('#comp_score');
+let your_choice = document.querySelector('#user_choice');
+let comp_choice = document.querySelector('#comp_choice');
 
 
 const playGame=(userChoice, compChoice)=>{
