@@ -1,14 +1,14 @@
-let choices = document.querySelectorAll('#choice');
+let choices = document.querySelectorAll('#option');
 let userScore = 0;
 let compScore = 0;
-let user_score = document.querySelector('#user_score');
-let comp_score = document.querySelector('#comp_score');
+let user_score = document.querySelector('#userScore');
+let comp_score = document.querySelector('#compScore');
 let your_choice = document.querySelector('#user_choice');
 let comp_choice = document.querySelector('#comp_choice');
 
 
 const playGame=(userChoice, compChoice)=>{
-    if ((userChoice==='rock' && compChoice==='scissors') || (userChoice==='paper' && compChoice==='rock') || (userChoice==='scissors' && compChoice==='paper')){
+    if ((userChoice==='rock' && compChoice==='scissor') || (userChoice==='paper' && compChoice==='rock') || (userChoice==='scissor' && compChoice==='paper')){
         userScore ++
     } else if (userChoice!=compChoice){
         compScore ++
@@ -16,7 +16,7 @@ const playGame=(userChoice, compChoice)=>{
 };
 
 const random_choice = () => {
-    let options = ["rock", "paper", "scissors"];
+    let options = ["rock", "paper", "scissor"];
     let index = Math.floor(Math.random()*3);
     return options[index];
 };
