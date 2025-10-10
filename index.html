@@ -8,40 +8,37 @@
 </head>
 <body>
 
-    <div class="w-screen h-screen">
-        <div class="w-screen h-[10vh] bg-blue-900 flex justify-center items-center pt-5">
-            <p class="text-center text-4xl text-blue-50 font-serif font-extrabold">Stone Paper Scissor</p>
+    <div class="min-w-sm h-screen bg-orange-500/50">
+        <div id="heading" class="h-fit w-screen pt-3 md:pt-4 lg:pt-5 2xl:pt-6 bg-blue-900 grid items-center">
+            <p class="text-center text-4xl lg:text-5xl px-3 py-3 md:py-4 2xl:py-5 font-serif font-extrabold text-blue-50">Rock Paper Scissors</p>
         </div>
-        <div class="w-screen pt-16 flex flex-wrap gap-10 justify-center">
-            <img src="./images/rock.png" alt="" name="rock" id="choice" class="rounded-full h-[140px] w-[140px] object-cover border-4 hover:scale-110 border-black ">
-            <img src="./images/paper.png" alt="" name="paper" id="choice" class="rounded-full h-[140px] w-[140px] object-cover border-4 hover:scale-110 border-black ">                    
-            <img src="./images/scissors.png" alt="" name="scissors" id="choice" class="rounded-full h-[140px] w-[140px] object-cover border-4 hover:scale-110 border-black ">
+        <div id="options" class="flex flex-wrap gap-6 md:gap-10 lg:gap-20 py-10 md:py-16 justify-center">
+            <img src="./images/rock.png" id="option" name="rock" alt="" class="h-[100px] w-[100px] md:h-[140px] md:w-[140px] lg:h-[150px] lg:w-[150px] object-cover rounded-full border-4 border-black lg:hover:scale-110">
+            <img src="./images/paper.png" id="option" name="paper" alt="" class="h-[100px] w-[100px] md:h-[140px] md:w-[140px] lg:h-[150px] lg:w-[150px] object-cover rounded-full border-4 border-black lg:hover:scale-110">
+            <img src="./images/scissors.png" id="option" name="scissor" alt="" class="h-[100px] w-[100px] md:h-[140px] md:w-[140px] lg:h-[150px] lg:w-[150px] object-cover rounded-full border-4 border-black lg:hover:scale-110">
         </div>
-        <div class="w-screen h-fit py-8 pt-20 font-serif text-3xl">
-            <div class="flex py-3">
-                <div class="w-1/2 text-right pr-3">
-                    You :- 
-                </div>
-                <div id="user_choice" class="w-fit"></div>
+        <div id="choices" class="h-fit font-serif text-2xl md:text-3xl py-4 md:py-8">
+            <div id="user" class="flex mb-2 md:mb-3">
+                <div class="w-1/2 text-right pr-4">You :-</div>
+                <div id="user_choice" class="font-bold"></div>
             </div>
-            <div class="flex">
-                <div class="w-1/2 text-right pr-3">
-                    Computer :-
-                </div>
-                <div id="comp_choice" class="w-fit"></div>
+            <div id="computer" class="flex">
+                <div class="w-1/2 text-right pr-4">Computer :-</div>
+                <div id="comp_choice" class="font-bold"></div>
             </div>
         </div>
-        <div class="w-screen h-fit pt-10 flex justify-center gap-16 font-serif text-4xl">
-            <div class="w-fit h-fit text-center">
-                <div id="user_score" class="pb-5 text-5xl font-extrabold">0</div>
-                <div class="overline">You</div>
+        <div id="score_cards" class="flex gap-16 md:gap-24 lg:gap-32 py-10 md:py-8 lg:py-6 justify-center">
+            <div class="font-serif text-3xl md:text-4xl lg:text-5xl">
+                <div id="userScore" class="text-center text-5xl md:text-7xl lg:text-8xl  font-extrabold">0</div>
+                <div class="overline pt-2 md:pt-4 lg:pt-6">You</div>
             </div>
-            <div class="w-fit h-fit text-center">
-                <div id="comp_score" class="pb-5 text-5xl font-extrabold">0</div>
-                <div class="overline">Computer</div>
+            <div class="font-serif text-3xl md:text-4xl lg:text-5xl">
+                <div id="compScore" class="text-center text-5xl md:text-7xl lg:text-8xl  font-extrabold">0</div>
+                <div class="overline pt-2 md:pt-4 lg:pt-6">Comp</div>
             </div>
         </div>
-    </div>    
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
