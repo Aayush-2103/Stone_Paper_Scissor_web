@@ -5,6 +5,7 @@ let user_score = document.querySelector('#userScore');
 let comp_score = document.querySelector('#compScore');
 let your_choice = document.querySelector('#user_choice');
 let comp_choice = document.querySelector('#comp_choice');
+let resetBtn = document.querySelector('#resetbtn');
 
 
 const playGame=(userChoice, compChoice)=>{
@@ -13,6 +14,7 @@ const playGame=(userChoice, compChoice)=>{
     } else if (userChoice!=compChoice){
         compScore ++
     }
+    resetBtn.classList.remove('hidden');
 };
 
 const random_choice = () => {
@@ -33,3 +35,12 @@ choices.forEach((choice)=>{
     });
 });
 
+resetBtn.addEventListener('click',()=>{
+    your_choice.innerText = '';
+    comp_choice.innerText = '';
+    userScore = 0;
+    user_score.innerText = '0';
+    compScore = 0;
+    comp_score.innerText = '0';
+    resetBtn.classList.add('hidden');
+});
